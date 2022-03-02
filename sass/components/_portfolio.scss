@@ -1,0 +1,85 @@
+.section-portfolio .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.portfolio-item {
+    &--overlay {
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color-black, 0.8);
+        cursor: pointer;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+
+        opacity: 0;
+
+        &__detail {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+
+            h3 {
+                color: $color-moon-yellow;
+                font-size: 2rem;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+                -webkit-transform: translateY(-40%);
+                        transform: translateY(-40%);
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+            }
+
+            span {
+                display: inline-block;
+                border-top: 1px solid $color_white_smoke;
+                border-bottom: 1px solid $color_white_smoke;
+                height: 6px; //no dependency on rem
+                width: 30px;
+            }
+            p{
+                color: $color-white;
+                font-size: 1.4rem;
+                margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+                -webkit-transform: translateY(40%);
+                        transform: translateY(40%);
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &:hover &--overlay{
+        opacity: 1;
+    }
+
+    &:hover &--overlay__detail h3{
+        -webkit-transform: translateY(-20%);
+                transform: translateY(-20%);
+    }
+    &:hover &--overlay__detail p{
+        opacity: 1;
+        -webkit-transform: translateY(20%);
+                transform: translateY(20%);
+    }
+}
+
+
+//override magnific popup to see 970x250
+.mfp-iframe-holder .mfp-content {
+    max-width: 970px !important;
+}
+
+.mfp-iframe-holder {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}

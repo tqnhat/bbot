@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="decription" content="Creative freelancer online banner website with html5, css3, jQuery, greensock gsap">
+    <meta name="keywords" content="banner, html5 banner ,online banner, animation, animator, banner designer, freelancer, good animation">
+
+    <meta property="og:image" content="img/fbcover.jpg" />
+    <meta property="og:type"  content="website" />
+    <meta property="og:title" content="Senior HTML5 Banner Developer" />
+    <meta property="og:description" content="Design, animate custom HTML5 banner ads for various platforms like Google Ads, DoubleClick, Sizmek, Adform, IAB." />
+    <title>BBOT Banner Services</title>
+
+    <!--Bootstrap 4.3.1-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--Magnific Popup-->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+    
+    <!-- Gooogle Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
+    <!-- PREPLOADER -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- PREPLOADER END-->
+    
+    <!--NAVAGATION-->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="nav-wrapper">
+                <a class="nav-brand smooth-scroll" href="#home">
+                    <img src="img/logo/logo-dark.png" alt="logo">
+                </a>    
+                
+                <!-- Mobile menu open button -->
+                <span id="mobile-nav-open-btn">&#9776;</span>
+
+                <!--Desktop Menu-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="smooth-scroll nav-link active" href="#home">home</a></li>
+                        <li class="nav-item"><a class="smooth-scroll nav-link" href="#portfolio">portfolio</a></li>
+                        <li class="nav-item"><a class="smooth-scroll nav-link" href="#about">about</a></li>
+                        <li class="nav-item"><a class="smooth-scroll nav-link" href="#skill">skill</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.pdf">Résumé/CV</a></li>
+                    </ul>
+                </div>
+                <!--Mobile Menu-->
+                <div id="mobile-nav">
+                    <span id="mobile-nav-close-btn">&times;</span>
+                    <div id="mobile-nav-content">
+                        <ul class="nav u-center-text">
+                            <li class="nav-item"><a class="smooth-scroll nav-link active" href="#home">home</a></li>
+                            <li class="nav-item"><a class="smooth-scroll nav-link" href="#portfolio">portfolio</a></li>
+                            <li class="nav-item"><a class="smooth-scroll nav-link" href="#about">about</a></li>
+                            <li class="nav-item"><a class="smooth-scroll nav-link" href="#skill">skill</a></li>
+                            <li class="nav-item"><a class="nav-link" href="cv.pdf">Résumé/CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--NAVAGATION END-->
+
+    <!--HOME-->
+    <section id="home" class="section-home">
+        <div class="u_content-box-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="circle-img">
+                            <img src="img/me.jpg" alt="Me">
+                        </div>
+                        <div class="home-intro">
+                            <h2 class="home-intro__name horizontal-heading">Hello, I'm Nhat.</h2>
+                            <h3 class="home-intro__job">Banner Designer, <br> Web Animator, <br>Front End Developer</h3>
+                            <a class="home-intro__email" href="mailto:nhat.bbot@gmail.com">nhat.bbot@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--HOME END-->
+
+    <!--PORTFOLIO-->
+    <section id="portfolio" class="section-portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <!--Portfolio Item 1-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi1" class="portfolio-item">
+                        <a href="banners/Airer_300x250/index.html">
+                            <img src="img/banner/b1.jpg" alt="Airer_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Lakeland Airer</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 2-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi2" class="portfolio-item">
+                        <a href="banners/Antigravity_300x250/index.html">
+                            <img src="img/banner/b2.jpg" alt="Antigravity_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Lakeland Antigravity</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 3-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi3" class="portfolio-item">
+                        <a href="banners/Black_Friday_300x250/index.html">
+                            <img src="img/banner/b3.jpg" alt="Black_Friday_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Very Black_Friday</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 4-->
+                <div class="col-sm-6 col-md-3">
+                        <div id="pi4" class="portfolio-item">
+                            <a href="banners/BOSCH_300x250/index.html">
+                                <img src="img/banner/b4.jpg" alt="BOSCH_300x250" class="img-fluid">
+                                <div class="portfolio-item--overlay">
+                                    <div class="portfolio-item--overlay__detail">
+                                        <h3>Bosch</h3>
+                                        <!-- Item Strips -->
+                                        <span></span>
+                                        <p>HTML5 Banner</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <!--Portfolio Item 5-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi5" class="portfolio-item">
+                        <a href="banners/CastIron_300x250/index.html">
+                            <img src="img/banner/b5.jpg" alt="CastIron_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Lakeland CastIron</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 6-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi6" class="portfolio-item">
+                        <a href="banners/Christmas_300x250/index.html">
+                            <img src="img/banner/b6.jpg" alt="Christmas_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Very Christmas</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 7-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi7" class="portfolio-item">
+                        <a href="banners/Cupcake_300x250/index.html">
+                            <img src="img/banner/b7.jpg" alt="Cupcake_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Lakeland Cupcake</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 8-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi8" class="portfolio-item">
+                        <a href="banners/DVV_GWD_300x250/AutosalonDec_DVV_300x250_FR.html">
+                            <img src="img/banner/b8.jpg" alt="DVV_GWD_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>DVV GWD</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 9-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi9" class="portfolio-item">
+                        <a href="banners/JIM_Handset_Promo_320x250/index.html">
+                            <img src="img/banner/b9.jpg" alt="JIM_Handset_Promo_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>JIM Handset Promo</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 10-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi10" class="portfolio-item">
+                        <a href="banners/NIV_eShop_GWD_300x250/NIV_eShop_March2016_300x250_V1_FR.html">
+                            <img src="img/banner/b10.jpg" alt="NIV_eShop_GWD_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Nivea EShop_GWD</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 11-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi11" class="portfolio-item">
+                        <a href="banners/Quick_2_300x250/index.html">
+                            <img src="img/banner/b11.jpg" alt="Quick_2_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Quick</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 12-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi12" class="portfolio-item">
+                        <a href="banners/Quick_300x250/index.html">
+                            <img src="img/banner/b12.jpg" alt="Quick_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Quick</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 13-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi13" class="portfolio-item">
+                        <a href="banners/Quick_Big_336x280/index.html">
+                            <img src="img/banner/b13.jpg" alt="Quick_Big_336x280" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Quick</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 14-->
+                <div class="col-sm-6 col-md-3">
+                    <div id="pi14" class="portfolio-item">
+                        <a href="banners/Spiralizer_300x250/index.html">
+                            <img src="img/banner/b14.jpg" alt="Spiralizer_300x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Lakeland Spiralizer</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 15-->
+                <div class="col-sm-6 col-md-3 d-xs-none d-lg-block">
+                    <div id="pi15" class="portfolio-item">
+                        <a href="banners/TF6MegaGiant_720x480/index.html">
+                            <img src="img/banner/b15.jpg" alt="TF6MegaGiant_720x480" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Quick MegaGiant</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 16-->
+                <div class="col-sm-6 col-md-3 d-xs-none d-lg-block">
+                    <div id="pi16" class="portfolio-item">
+                        <a href="banners/Video_970x250/index.html">
+                            <img src="img/banner/b16.jpg" alt="Video_970x250" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Lakeland</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>HTML5 Video Banner</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PORTFOLIO END-->
+    
+    <!--ABOUT-->
+    <section id="about" class="section-about">
+        <div class="u_content-box-medium">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="about-text">
+                            <h2 class="horizontal-heading">Hello, I'm Nhat.</h2>
+                            <p>I’m a freelance banner developer in digital advertising.</p>
+                            <p>
+                                Coming from a background in programming (Bachelor’s Degree in Computer Science 
+                                ,University of Natural Science, Vietnam). I picked up Adobe Flash and moved more 
+                                into animation, developing an interest in interactivity before I graduate. 
+                                I moved into the Flash banner industry, combining animation and development 
+                                skills to see campaigns through from project start to finish. As the banner 
+                                world moved away from Flash, I solidified my front-end development skills 
+                                and now develop and animate HTML5 online advertising banners. I like to 
+                                code all my banners by hand and animate with Greensock's GSAP library 
+                                because I can control the file size in hand-coded banners better than 
+                                Google Web Designer or Adobe Animate.
+                            </p>
+                            <p>I help clients to create new design from resources or adapt designs. 
+                                    Beside that I can help them to manage banners on Double Click, Adword, 
+                                    Adform, Sizmek, Amazon…
+                            </p>
+                            <p>
+                                I’d be happy to lend a hand with your project.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>          
+    </section>
+    <!--ABOUT END-->
+
+    <!--SKILL-->
+    <section id="skill" class="section-skill">
+        <div class="u_content-box-medium">
+            <div class="container">                        
+                <div class="row">
+                    <!--Skill 01-->
+                    <div class="col-sm-6">
+                        <div class="skill">
+                            <h4>HTML5</h4>
+                            <div class="progress">
+                                <div class="progress-bar" 
+                                    role="progressbar" 
+                                    aria-valuenow="90" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="100" 
+                                    style="width: 0%;">
+
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skill 02-->
+                    <div class="col-sm-6">
+                        <div class="skill">
+                            <h4>CSS3</h4>
+                            <div class="progress">
+                                <div class="progress-bar"
+                                    role="progressbar" 
+                                    aria-valuenow="90" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="100" 
+                                    style="width: 0%;">
+
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skill 03-->
+                    <div class="col-sm-6">
+                        <div class="skill">
+                            <h4>Javascript</h4>
+                            <div class="progress">
+                                <div class="progress-bar"
+                                    role="progressbar" 
+                                    aria-valuenow="90" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="100" 
+                                    style="width: 0%;">
+
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skill 04-->
+                    <div class="col-sm-6">
+                        <div class="skill">
+                            <h4>Bootstrap</h4>
+                            <div class="progress">
+                                <div class="progress-bar"
+                                role="progressbar" 
+                                    aria-valuenow="85" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="100" 
+                                    style="width: 0%;">
+
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skill 05-->
+                    <div class="col-sm-6">
+                        <div class="skill">
+                            <h4>Banner Design</h4>
+                            <div class="progress">
+                                <div class="progress-bar"
+                                role="progressbar" 
+                                aria-valuenow="80" 
+                                aria-valuemin="0" 
+                                aria-valuemax="100" 
+                                style="width: 0%;">
+
+                                <span>80%</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skill 06-->
+                    <div class="col-sm-6">
+                        <div class="skill">
+                            <h4>Photoshop</h4>
+                            <div class="progress">
+                                <div class="progress-bar"
+                                    role="progressbar" 
+                                    aria-valuenow="80" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="100" 
+                                    style="width: 0%;">
+
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>          
+    </section>
+    <!--SKILL END-->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; <span>BBOT</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    
+    <!--Javascript Frameworks-->
+    <!--JQuery 3.4.1-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    
+    <!--Bootstrap 4.3.1-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Magnific Popup-->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!--Waypoint-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!--Javascript Frameworks End-->
+
+    <!-- Custom Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

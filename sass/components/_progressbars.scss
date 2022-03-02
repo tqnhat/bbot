@@ -1,0 +1,39 @@
+.skill {
+    margin-bottom: 2rem;
+
+    h4 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .progress {
+        height: 2rem;
+        border-radius: 6px;
+        overflow: visible;
+    }
+    .progress-bar {
+        background-color: $color-moon-yellow;
+        position: relative;
+
+        span {
+            font-size: 1.2rem;
+            font-family: "Open Sans", sans-serif;
+            padding: 3px;
+            background: $color_grey;
+            position: absolute;
+            top: -3.6rem;
+            left: 97%; //this the reason <span> should be a child of progress-bar
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-top: 8px solid $color_grey;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                bottom: -8px;
+                left: 32%;
+            }
+        }
+    }
+}

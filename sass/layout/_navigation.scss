@@ -1,0 +1,143 @@
+.navbar {
+    margin: 0;
+    padding: 1.5rem 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 5rem;
+}
+.nav-brand {
+    img {
+        width: 10rem;
+        height: auto;
+    }
+}
+.navbar-collapse {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+}
+#main-nav {
+    padding-top: 2px;
+}
+.nav-item {
+    padding: 0 1.2rem;
+
+    .nav-link {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $color-white;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $color-moon-yellow;
+        }
+        &.active {
+            color: $color-moon-yellow;
+        }
+    }
+}
+.white-nav-top {
+    padding: 1rem 0;
+    background-color: $color-white;
+    -webkit-box-shadow: 0 4px 8px -4px $color-grey;
+            box-shadow: 0 4px 8px -4px $color-grey;
+
+    .nav-item {
+        .nav-link {
+            color: $color_grey;
+
+            &:hover,
+            &:focus {
+                color: $color-moon-yellow;
+            }
+        }
+        .active.nav-link {
+            color: $color-moon-yellow;
+        }
+    }
+}
+
+//Mobile menu
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: $color-moon-yellow;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 40px;
+    display: none;
+    top: 12px;
+}
+
+#mobile-nav-close-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: $color-grey;
+    font-weight: 400;
+    cursor: pointer;
+    right: 40px;
+    top: -20px;
+    position: absolute;
+    -webkit-transition: all .3;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+
+    &:hover,
+    &:focus {
+        color: $color-moon-yellow;
+    }
+}
+#mobile-nav {
+    //by default height of mobile nav is 0%
+    width: 100%;
+    height: 0%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color:rgba($color-white, 0.9);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow-y: hidden;
+
+    ul li {
+        margin-bottom: 20px;
+    }
+
+    a{
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        color: $color-grey;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: inline;
+        -webkit-transition: all 0.3;
+        transition: all 0.3;
+
+        &:hover,
+        &:focus {
+            color: $color-moon-yellow;
+        }
+    }
+}
+#mobile-nav-content {
+    .nav {
+        display: block;
+    }
+    width: 100%;
+    margin-top: 50px;
+}
+
+.white-nav-top #mobile-nav ul.nav>li .active.nav-link {
+    color: $color-moon-yellow;
+}

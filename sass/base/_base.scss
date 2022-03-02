@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+html {
+    // That define what 1rem is
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: $color_grey;
+}
+section {
+    background-color: $color-white;
+    overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.horizontal-heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
+
+

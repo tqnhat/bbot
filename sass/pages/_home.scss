@@ -1,0 +1,59 @@
+.section-home{
+    padding-top: 6rem;
+    background-color: $color-grey;
+}
+
+.home-intro {
+    position: relative;
+    left: 130px;
+
+    &__name {
+        color: $color-white;
+    }
+    &__job {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-white;
+    }   
+    &__email {
+        display: inline-block;
+        color: $color-white;
+        font-weight: 500;
+        font-size: 1.4rem;
+        border-bottom: 3px solid $color_moon_yellow;
+
+        &:hover{
+            text-decoration: none;
+            color: $color-moon-yellow;
+        }
+    }
+}
+
+.about-text {
+    p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 1.5rem;
+    }
+}
+
+.section-skill{
+    background-color: $color-white-smoke;
+}
+
+.circle-img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-bottom: 2rem;
+
+    img {
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; 
+    }
+}

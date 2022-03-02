@@ -1,0 +1,14 @@
+{
+  "name": "bbot",
+  "version": "1.0.0",
+  "description": "Bbot Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Nhat Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
