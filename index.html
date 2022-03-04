@@ -26,6 +26,10 @@
     
     <!--Animate CSS-->
     <link rel="stylesheet" href="css/animate/animate.css">
+    
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
@@ -52,10 +56,10 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="smooth-scroll nav-link active" href="#home">home</a></li>
-                        <li class="nav-item"><a class="smooth-scroll nav-link" href="#portfolio">portfolio</a></li>
                         <li class="nav-item"><a class="smooth-scroll nav-link" href="#about">about</a></li>
+                        <li class="nav-item"><a class="smooth-scroll nav-link" href="#portfolio">portfolio</a></li>
                         <li class="nav-item"><a class="smooth-scroll nav-link" href="#skill">skill</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.pdf">Résumé/CV</a></li>
+                        <li class="nav-item"><a class="smooth-scroll nav-link" href="#testimonials">testimonials</a></li>
                     </ul>
                 </div>
                 <!--Mobile Menu-->
@@ -64,10 +68,10 @@
                     <div id="mobile-nav-content">
                         <ul class="nav u-center-text">
                             <li class="nav-item"><a class="smooth-scroll nav-link active" href="#home">home</a></li>
-                            <li class="nav-item"><a class="smooth-scroll nav-link" href="#portfolio">portfolio</a></li>
                             <li class="nav-item"><a class="smooth-scroll nav-link" href="#about">about</a></li>
+                            <li class="nav-item"><a class="smooth-scroll nav-link" href="#portfolio">portfolio</a></li>
                             <li class="nav-item"><a class="smooth-scroll nav-link" href="#skill">skill</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cv.pdf">Résumé/CV</a></li>
+                            <li class="nav-item"><a class="smooth-scroll nav-link" href="#testimonials">testimonials</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +82,7 @@
 
     <!--HOME-->
     <section id="home" class="section-home">
-        <div class="u_content-box-big">
+        <div class="u-content-box-big">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -87,8 +91,13 @@
                         </div>
                         <div class="home-intro">
                             <h2 class="home-intro__name horizontal-heading">Hello, I'm Nhat.</h2>
-                            <h3 class="home-intro__job">Front End Developer</h3>
-                            <h6 class="home-intro__phone">+84 917881198</h6>
+                            <h3 class="home-intro__job">Senior Front-end Developer</h3>
+                            <h6 class="home-intro__phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>+84 917881198</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
                             <a class="home-intro__email" href="mailto:nhat.bbot@gmail.com">nhat12c@gmail.com</a>
                         </div>
                     </div>
@@ -98,95 +107,62 @@
     </section>
     <!--HOME END-->
 
+     <!--ABOUT-->
+     <section id="about" class="section-about">
+        <div class="u-content-box-medium">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="about-text">
+                            <h2 class="horizontal-heading">Senior Front-end Developer</h2>
+                            <p>
+                                Technology can make life better. In particular, web applications play a large part in improving the quality of life. 
+                                Therefore, I love to learn and apply new technologies to build web applications.
+                            </p>  
+                            <p>  
+                                As a Senior Flash Dev, Senior Front-end Dev, I have experience in making games, media players, banners, website and app UI. 
+                                I aim to become a Fullstack Dev so that I can deploy more useful applications for the community.
+                            </p>
+                            <p>
+                                Programming is fun but also stressful. Practicing Mindfulness has helped me find little joy in every task I do. 
+                                Thanks to that, I spent a year going to Myanmar to practice intensively. 
+                                Now, Mindfulness helps me to be more productive and balanced. 
+                                Therefore, I also want to spread the values of Mindfulness to the developer community.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>          
+    </section>
+    <!--ABOUT END-->
+
     <!--PORTFOLIO-->
     <section id="portfolio" class="section-portfolio">
         <div class="container-fluid">
             <div class="row no-gutters">
                 <!--Portfolio Item 1-->
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4">
                     <div id="pi1" class="portfolio-item">
-                        <a href="banners/Airer_300x250/index.html">
-                            <img src="img/banner/b1.jpg" alt="Airer_300x250" class="img-fluid">
+                        <a href="#">
+                            <img src="img/app/b3.jpg" alt="react website" class="img-fluid">
                             <div class="portfolio-item--overlay">
                                 <div class="portfolio-item--overlay__detail">
-                                    <h3>Lakeland Airer</h3>
+                                    <h3>Portfolio</h3>
                                     <!-- Item Strips -->
                                     <span></span>
-                                    <p>HTML5 Banner</p>
+                                    <p>React & TailwindCSS</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
+                
                 <!--Portfolio Item 2-->
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4">
                     <div id="pi2" class="portfolio-item">
-                        <a href="banners/Antigravity_300x250/index.html">
-                            <img src="img/banner/b2.jpg" alt="Antigravity_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Lakeland Antigravity</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 3-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi3" class="portfolio-item">
-                        <a href="banners/Black_Friday_300x250/index.html">
-                            <img src="img/banner/b3.jpg" alt="Black_Friday_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Very Black_Friday</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 4-->
-                <div class="col-sm-6 col-md-3">
-                        <div id="pi4" class="portfolio-item">
-                            <a href="banners/BOSCH_300x250/index.html">
-                                <img src="img/banner/b4.jpg" alt="BOSCH_300x250" class="img-fluid">
-                                <div class="portfolio-item--overlay">
-                                    <div class="portfolio-item--overlay__detail">
-                                        <h3>Bosch</h3>
-                                        <!-- Item Strips -->
-                                        <span></span>
-                                        <p>HTML5 Banner</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                <!--Portfolio Item 5-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi5" class="portfolio-item">
-                        <a href="banners/CastIron_300x250/index.html">
-                            <img src="img/banner/b5.jpg" alt="CastIron_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Lakeland CastIron</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 6-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi6" class="portfolio-item">
                         <a href="banners/Christmas_300x250/index.html">
-                            <img src="img/banner/b6.jpg" alt="Christmas_300x250" class="img-fluid">
+                            <img src="img/banner/b2.jpg" alt="Christmas_300x250" class="img-fluid">
                             <div class="portfolio-item--overlay">
                                 <div class="portfolio-item--overlay__detail">
                                     <h3>Very Christmas</h3>
@@ -198,123 +174,12 @@
                         </a>
                     </div>
                 </div>
-                <!--Portfolio Item 7-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi7" class="portfolio-item">
-                        <a href="banners/Cupcake_300x250/index.html">
-                            <img src="img/banner/b7.jpg" alt="Cupcake_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Lakeland Cupcake</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 8-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi8" class="portfolio-item">
-                        <a href="banners/DVV_GWD_300x250/AutosalonDec_DVV_300x250_FR.html">
-                            <img src="img/banner/b8.jpg" alt="DVV_GWD_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>DVV GWD</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 9-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi9" class="portfolio-item">
-                        <a href="banners/JIM_Handset_Promo_320x250/index.html">
-                            <img src="img/banner/b9.jpg" alt="JIM_Handset_Promo_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>JIM Handset Promo</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 10-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi10" class="portfolio-item">
-                        <a href="banners/NIV_eShop_GWD_300x250/NIV_eShop_March2016_300x250_V1_FR.html">
-                            <img src="img/banner/b10.jpg" alt="NIV_eShop_GWD_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Nivea EShop_GWD</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 11-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi11" class="portfolio-item">
-                        <a href="banners/Quick_2_300x250/index.html">
-                            <img src="img/banner/b11.jpg" alt="Quick_2_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Quick</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 12-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi12" class="portfolio-item">
-                        <a href="banners/Quick_300x250/index.html">
-                            <img src="img/banner/b12.jpg" alt="Quick_300x250" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Quick</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 13-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi13" class="portfolio-item">
-                        <a href="banners/Quick_Big_336x280/index.html">
-                            <img src="img/banner/b13.jpg" alt="Quick_Big_336x280" class="img-fluid">
-                            <div class="portfolio-item--overlay">
-                                <div class="portfolio-item--overlay__detail">
-                                    <h3>Quick</h3>
-                                    <!-- Item Strips -->
-                                    <span></span>
-                                    <p>HTML5 Banner</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--Portfolio Item 14-->
-                <div class="col-sm-6 col-md-3">
-                    <div id="pi14" class="portfolio-item">
+                                
+                <!--Portfolio Item 3-->
+                <div class="col-sm-6 col-md-4">
+                    <div id="pi3" class="portfolio-item">
                         <a href="banners/Spiralizer_300x250/index.html">
-                            <img src="img/banner/b14.jpg" alt="Spiralizer_300x250" class="img-fluid">
+                            <img src="img/banner/b3.jpg" alt="Spiralizer_300x250" class="img-fluid">
                             <div class="portfolio-item--overlay">
                                 <div class="portfolio-item--overlay__detail">
                                     <h3>Lakeland Spiralizer</h3>
@@ -326,33 +191,50 @@
                         </a>
                     </div>
                 </div>
-                <!--Portfolio Item 15-->
-                <div class="col-sm-6 col-md-3 d-xs-none d-lg-block">
-                    <div id="pi15" class="portfolio-item">
-                        <a href="banners/TF6MegaGiant_720x480/index.html">
-                            <img src="img/banner/b15.jpg" alt="TF6MegaGiant_720x480" class="img-fluid">
+
+                <!--Portfolio Item 4-->
+                <div class="col-sm-6 col-md-4">
+                    <div id="pi4" class="portfolio-item">
+                        <a href="img/photoshop/drinkmenu39.jpg">
+                            <img src="img/photoshop/b4.jpg" alt="Drink Menu" class="img-fluid">
                             <div class="portfolio-item--overlay">
                                 <div class="portfolio-item--overlay__detail">
-                                    <h3>Quick MegaGiant</h3>
+                                    <h3>Drink Menu</h3>
                                     <!-- Item Strips -->
                                     <span></span>
-                                    <p>HTML5 Banner</p>
+                                    <p>Photoshop</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <!--Portfolio Item 16-->
-                <div class="col-sm-6 col-md-3 d-xs-none d-lg-block">
-                    <div id="pi16" class="portfolio-item">
-                        <a href="banners/Video_970x250/index.html">
-                            <img src="img/banner/b16.jpg" alt="Video_970x250" class="img-fluid">
+                <!--Portfolio Item 5-->
+                <div class="col-sm-6 col-md-4">
+                    <div id="pi5" class="portfolio-item">
+                        <a href="https://blissmaker.studio/project/homeyz">
+                            <img src="img/app/b1.jpg" alt="Homeyz" class="img-fluid">
                             <div class="portfolio-item--overlay">
                                 <div class="portfolio-item--overlay__detail">
-                                    <h3>Lakeland</h3>
+                                    <h3>Mobile UI</h3>
                                     <!-- Item Strips -->
                                     <span></span>
-                                    <p>HTML5 Video Banner</p>
+                                    <p>React Native</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Portfolio Item 6-->
+                <div class="col-sm-6 col-md-4">
+                    <div id="pi6" class="portfolio-item">
+                        <a href="https://www.nhaccuatui.com/video/cant-hold-us-macklemore-ft-ryan-lewis-ft-ray-dalton.8E1OA65LuBIq.html">
+                            <img src="img/app/b2.jpg" alt="Video Player" class="img-fluid">
+                            <div class="portfolio-item--overlay">
+                                <div class="portfolio-item--overlay__detail">
+                                    <h3>Video Player</h3>
+                                    <!-- Item Strips -->
+                                    <span></span>
+                                    <p>UI - Handle Data</p>
                                 </div>
                             </div>
                         </a>
@@ -362,46 +244,10 @@
         </div>
     </section>
     <!--PORTFOLIO END-->
-    
-    <!--ABOUT-->
-    <section id="about" class="section-about">
-        <div class="u_content-box-medium">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="about-text">
-                            <h2 class="horizontal-heading">Hello, I'm Nhat.</h2>
-                            <p>I’m a freelance banner developer in digital advertising.</p>
-                            <p>
-                                Coming from a background in programming (Bachelor’s Degree in Computer Science 
-                                ,University of Natural Science, Vietnam). I picked up Adobe Flash and moved more 
-                                into animation, developing an interest in interactivity before I graduate. 
-                                I moved into the Flash banner industry, combining animation and development 
-                                skills to see campaigns through from project start to finish. As the banner 
-                                world moved away from Flash, I solidified my front-end development skills 
-                                and now develop and animate HTML5 online advertising banners. I like to 
-                                code all my banners by hand and animate with Greensock's GSAP library 
-                                because I can control the file size in hand-coded banners better than 
-                                Google Web Designer or Adobe Animate.
-                            </p>
-                            <p>I help clients to create new design from resources or adapt designs. 
-                                    Beside that I can help them to manage banners on Double Click, Adword, 
-                                    Adform, Sizmek, Amazon…
-                            </p>
-                            <p>
-                                I’d be happy to lend a hand with your project.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-        </div>          
-    </section>
-    <!--ABOUT END-->
 
     <!--SKILL-->
     <section id="skill" class="section-skill">
-        <div class="u_content-box-medium">
+        <div class="u-content-box-medium u-margin-bottom-small">
             <div class="container">                        
                 <div class="row">
                     <!--Skill 01-->
@@ -512,12 +358,84 @@
     </section>
     <!--SKILL END-->
 
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section-testimonials">
+        <div class="u-content-box-medium u-margin-top-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="vertical-heading">
+                            <h5>Awards</h5>
+                            <h2 class="black">What My <br><strong>Managers</strong> Say</h2>
+                        </div>
+                    </div>                    
+                    <div class="col-md-8">
+                        <div id="testimonials-slider" class="owl-carousel owl-theme">
+                            <!-- Testimonials 1 -->
+                            <div class="testimonial">
+                                <div class="row no-gutters">
+                                    <h3>NCT Top People 2011</h3>
+                                    <p>"Đề cử vì Flash Player mới & trang home sinh nhật nhaccuatui.com làm chất lượng rất tốt. Flash Player NCT đã 4 năm không thay đổi & Nhật là người làm  thay đổi cái này. Việc này sẽ giúp nhaccuatui chủ động thay đổi những phần quảng cáo bên trong tăng doanh thu cũng như là bảo mật."</p>
+                                </div>
+                                <div class="author">
+                                    <div class="row no-gutters">
+                                        <img src="img/managers/anhluan.jpg" alt="Anh Luan - CEO Nhaccuatui">
+                                        <div class="description">
+                                            <p class="name">Nhan The Luan</p>
+                                            <p class="role">CEO - Nhaccuatui</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonials 2 -->
+                            <div class="testimonial">
+                                <div class="row no-gutters">
+                                    <h3>NCT Top People 2011</h3>
+                                    <p>"Làm việc độc lập, hoàn thành đúng tiến độ, chủ động lên timeline và báo cáo rõ ràng trong công việc được giao."</p>
+                                </div>
+                                <div class="author">
+                                    <div class="row no-gutters">
+                                        <img src="img/managers/anhlinh.jpg" alt="Anh Linh - Front-end Leader - Nhaccuatui">
+                                        <div class="description">
+                                            <p class="name">Le Chi Linh</p>
+                                            <p class="role">Front-end Leader - Nhaccuatui</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <!-- Testimonials 3 -->
+                            <div class="testimonial">
+                                <div class="row no-gutters">
+                                    <h3>Staff of the Year 2017</h3>
+                                    <p>Chịu khó ghi chú, học hỏi và chủ động để hoàn thành các dự án mới.</p>
+                                </div>
+                                <div class="author">
+                                    <div class="row no-gutters">
+                                        <img src="img/managers/anhthai.jpg" alt="Anh Thai - Front-end Leader BLISS">
+                                        <div class="description">
+                                            <p class="name">Nguyen Thai</p>
+                                            <p class="role">Front-end Leader - BLISS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of TESTIMONIALS -->
+
+
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy; <span>BBOT</span></p>
+                    <p>Copyright &copy; <span>TQNHAT</span></p>
                 </div>
             </div>
         </div>
@@ -525,13 +443,12 @@
     <!-- End of Footer -->
     
     <!--Javascript Frameworks-->
-    <!--JQuery 3.4.1-->
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
+    <!--JQuery 3.6.0-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
+    <!-- Owl carousel -->
+    <script src="owlcarousel/owl.carousel.min.js"></script> 
+
     <!--Bootstrap 4.3.1-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -540,7 +457,6 @@
 
     <!--Waypoint-->
     <script src="js/jquery.waypoints.min.js"></script>
-    <!--Javascript Frameworks End-->
 
     <!-- Custom Javascript -->
     <script src="js/script.js"></script>

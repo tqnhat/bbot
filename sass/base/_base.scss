@@ -38,6 +38,24 @@ p {
     font-weight: 600;
 }
 
+.vertical-heading h5 {
+    color: $color_moon_yellow;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 9px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: relative;
+    left: -60px;
+    top: 56px;
+}
+.vertical-heading h2 {
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 40px;
+    color: black;
+}
 
 
 
