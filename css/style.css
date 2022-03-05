@@ -70,6 +70,15 @@ p {
   color: black;
 }
 
+.btn-general {
+  font-family: "Raleway", sans-serif;
+  border-radius: 28px;
+  font-size: 12px;
+  padding: 6px 18px;
+  transition: all 0.3s;
+  border: 1px solid white;
+}
+
 .circle-img .home-intro {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
@@ -111,55 +120,55 @@ p {
 }
 
 .u-center-text {
-  text-align: center !important;
+  text-align: center;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 4rem !important;
+  margin-bottom: 4rem;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 8rem !important;
+  margin-bottom: 8rem;
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 12rem !important;
+  margin-bottom: 12rem;
 }
 
 .u-margin-bottom-exbig {
-  margin-bottom: 18rem !important;
+  margin-bottom: 18rem;
 }
 
 .u-margin-top-small {
-  margin-top: 4rem !important;
+  margin-top: 4rem;
 }
 
 .u-margin-top-medium {
-  margin-top: 8rem !important;
+  margin-top: 8rem;
 }
 
 .u-margin-top-big {
-  margin-top: 12rem !important;
+  margin-top: 12rem;
 }
 
 .u-margin-top-exbig {
-  margin-top: 18rem !important;
+  margin-top: 18rem;
 }
 
 .u-content-box-small {
-  padding: 4rem 0 !important;
+  padding: 4rem 0;
 }
 
 .u-content-box-medium {
-  padding: 8rem 0 !important;
+  padding: 8rem 0;
 }
 
 .u-content-box-big {
-  padding: 12rem 0 !important;
+  padding: 12rem 0;
 }
 
 .u-content-box-exbig {
-  padding: 18rem 0 !important;
+  padding: 18rem 0;
 }
 
 #preloader {
@@ -300,6 +309,7 @@ p {
 #testimonials {
   background-color: #f4f4f4;
   color: #fff;
+  overflow: visible;
 }
 
 #testimonials-slider {
@@ -324,8 +334,7 @@ p {
 }
 
 .author .description {
-  width: 300px;
-  margin-top: 25px;
+  margin-top: 18px;
   text-align: left;
   margin-left: 15px;
 }
@@ -506,6 +515,33 @@ footer span {
   #mobile-nav-open-btn {
     display: block;
   }
+
+  #skill .u-content-box-big {
+    padding: 6rem 0;
+  }
+
+  #testimonials .u-margin-top-medium {
+    margin-top: 4rem;
+  }
+  #testimonials .u-content-box-medium {
+    padding: 4rem 0;
+  }
+  #testimonials .vertical-heading {
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #testimonials .vertical-heading h5 {
+    transform: rotate(0deg);
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+  }
+  #testimonials #testimonials-slider {
+    top: 0;
+  }
 }
 .section-home {
   padding-top: 6rem;
@@ -541,6 +577,9 @@ footer span {
   text-decoration: none;
   color: #f4c613;
 }
+.home-intro__cv {
+  margin-top: 12px;
+}
 
 .about-text p {
   font-size: 1.6rem;
@@ -560,11 +599,21 @@ footer span {
   clip-path: circle(50% at 50% 50%);
 }
 .circle-img img {
-  height: 100%;
+  width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  top: -20px;
+  position: absolute;
+}
+
+.btn-download-cv {
+  color: #fff;
+}
+.btn-download-cv:hover, .btn-download-cv:focus {
+  color: white;
+  background-color: #f4c613;
 }
 
 /*# sourceMappingURL=style.css.map */

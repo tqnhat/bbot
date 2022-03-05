@@ -2,4 +2,30 @@
     #mobile-nav-open-btn {
         display: block;
     }
+
+    #skill {
+        .u-content-box-big { padding: 6rem 0; }
+    }
+
+    #testimonials {
+        .u-margin-top-medium { margin-top: 4rem; }
+        .u-content-box-medium { padding: 4rem 0; }
+        .vertical-heading {
+            padding: 0;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .vertical-heading h5{
+            transform: rotate(0deg);
+            display: block;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 20px;
+        }
+
+        #testimonials-slider{
+            top: 0;
+        }
+    }   
 }

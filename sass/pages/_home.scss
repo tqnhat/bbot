@@ -33,6 +33,9 @@
             color: $color-moon-yellow;
         }
     }
+    &__cv {
+        margin-top: 12px;
+    }
 }
 
 .about-text {
@@ -55,10 +58,21 @@
     clip-path: circle(50% at 50% 50%);
 
     img {
-        height: 100%;
+        width: 100%;
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; 
+        top: -20px;
+        position: absolute;
+    }
+}
+
+.btn-download-cv{
+    color: $color-white;
+    &:hover, 
+    &:focus {
+        color: white;
+        background-color: $color-moon-yellow;
     }
 }

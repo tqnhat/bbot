@@ -1,6 +1,7 @@
 #testimonials {
     background-color: $color_white_smoke;
     color: $color-white;
+    overflow: visible;
 }
 #testimonials-slider { 
     background-color: $color_moon_yellow;
@@ -25,8 +26,7 @@
 
 .author{
     .description{
-        width: 300px;
-        margin-top: 25px;
+        margin-top: 18px;
         text-align: left;
         margin-left: 15px;
 

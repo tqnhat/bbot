@@ -84,29 +84,10 @@ $(function () {
     $("#testimonials-slider").owlCarousel({
         items: 1,
         margin: 10,
-        autoplay: true,
+        autoplay: false,
         loop: true,
         nav: true,
         dots: false,
         autoplayHoverPause:true,
     });
-
-    // $('.owl-carousel').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     nav:true,
-    //     autoplay: true,
-    //     dots: false,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         600:{
-    //             items:3
-    //         },
-    //         1000:{
-    //             items:5
-    //         }
-    //     }
-    // })
 });
