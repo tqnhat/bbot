@@ -30,7 +30,7 @@ $(function () {
         if($(window).scrollTop() > 50){
             //show white navigation
             $("nav").addClass("white-nav-top");
-            $(".nav-brand img").attr("src", "img/logo/logo-dark.png");
+            $(".nav-brand img").attr("src", "img/logo/logo.png");
         }else{
             //hide white navigation
             $("nav").removeClass("white-nav-top");
