@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>300x250_Christmas</title>    
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>                    
+    <script type="text/javascript">
+        var clickTag = "https://www.google.com"; 
+    </script>
+    <style>
+        * {margin: 0; padding: 0; border: 0; } 
+        html { -webkit-transform: translateY(-50%) translateX(-50%); transform: translateY(-50%) translateX(-50%); top: 50%; left: 50%; position: absolute; }
+        #content {background: #ffffff; width: 300px; height: 250px; position: relative; overflow: hidden; } 
+        #clickArea {display: block; left: 0px; top: 0px; position: absolute; width: 298px; height: 248px; z-index:1000; border: 1px solid #e6007e; } 
+        #bg {position: absolute; left: 0; bottom: 0; } 
+        #t1{position: absolute; right: 13px; bottom: 52px; } 
+        #t1g{position: absolute; right: 4px; bottom: 43px; opacity: 0;} 
+        #t2{position: absolute; right: 13px; bottom: 52px; opacity: 0; }         
+        #t2g{position: absolute; right: 7.5px; bottom: 46.5px; opacity: 0; }         
+        #light{position: absolute; left: 64px; top: 10px; opacity: 0; }         
+        #heart-fly{position: absolute; top: 0; left: -6px; width: 66px; height: 36px; display: block; } 
+        #heart{position: absolute; top: 0; left: 17px; -webkit-backface-visibility: hidden; -webkit-transform-style: preserve-3d;} 
+        #heart-container{position: absolute; top: 50px; left: 70px} 
+        div.wing {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top left;
+        }
+        div#leftwing {
+            background-image: url('flap_left.png');
+            width: 19px; height: 21.6px;
+            top: 13px; left: 1px;
+        }
+        div#rightwing {
+            background-image: url('flap_right.png');
+            width: 17px; height: 20.57px;
+            right: -3px; top: 14px;
+        }
+
+        div#sparkles {
+            position: absolute;            
+        }
+        div.sparkle {
+            position: absolute;
+            width: 40px; height: 40px; background: transparent url('sparkle.png') no-repeat top left;
+            background-size: cover;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            -ms-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+        }               
+        #cta{position: absolute; right: 0; bottom: 0; }
+        #legal{position: absolute; right: 1px; bottom: 23px; opacity: 0; }
+        #very{position: absolute; top: 157px; left: 42px; } 
+        
+        .item{position: absolute; left: 70px; top: 160px; }  
+        #headphone{
+            left: 60px; top: 150px;
+            -webkit-transform: scale(.5);
+               -moz-transform: scale(.5);
+                -ms-transform: scale(.5);
+                 -o-transform: scale(.5);
+                    transform: scale(.5);
+        }       
+        #pig{
+            left: 50px; top: 150px;
+            -webkit-transform: scale(.5);
+               -moz-transform: scale(.5);
+                -ms-transform: scale(.5);
+                 -o-transform: scale(.5);
+                    transform: scale(.5);
+        }
+
+        #galaxy{position: absolute; left: 40px; top: 89px; opacity: 0;}
+        #doris{position: absolute; left: 0; bottom: -10px; }         
+    </style>
+</head>
+
+<body>
+<section id="content">
+    <a id="clickArea" href="{{PUB_CLICKTHROUGH}}" target="_blank"></a> 
+    <img id="bg" src="bg.jpg" width="300">         
+    <img id="t1" src="t1.png" width="144">
+    <img id="t1g" src="t1g.png" width="162">
+    <img id="t2" src="t2.png" width="141">
+    <img id="t2g" src="t2g.png" width="154">
+    
+    <div id="heart-container">
+        <div id="heart-fly">
+            <img id="heart" src="heart.png" width="40">
+            <div class="wing" id="leftwing"></div>
+            <div class="wing" id="rightwing"></div>
+        </div>
+    </div>
+    <img id="doris" src="doris.png" width="300">    
+    <div id="sparkles"></div>                  
+    <img id="light" src="light.png" width="235">
+    <img id="galaxy" src="galaxy.png" width="108">
+    
+    <img id="box1" class="item" src="box.png" width="13">
+    <img id="box2" class="item" src="box.png" width="16">
+    <img id="box3" class="item" src="box.png" width="29">
+    <img id="box4" class="item" src="box.png" width="18">
+    <img id="watch" class="item" src="watch.png" width="41">    
+    <img id="headphone" class="item" src="headphone.png" width="47">
+    <img id="pig" class="item" src="pig.png" width="59">
+    <img id="gold" class="item" src="gold.png" width="37">
+
+    <img id="legal" src="legal.png" width="144">
+    <img id="cta" src="cta.png" width="107">
+    <img id="very" src="very.png" width="71">
+
+</section><!-- /#content -->
+
+<script>   
+    var sparklewrap = document.getElementById('sparkles');
+    var sparklesource = [70,155];
+    var sparkletarget = [250,60];
+    var sparkleinterval = null;
+    function create_sparkle(){
+        var sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparklewrap.appendChild(sparkle);
+        TweenMax.to(sparkle,1,{repeat:-1,backgroundPosition:"-500px",ease:SteppedEase.config(10)});
+        TweenMax.fromTo(sparkle,1,
+            {left:sparklesource[0]+(30-Math.random()*60),top:sparklesource[1]},
+            {left:sparkletarget[0]+(50-Math.random()*100),top:sparkletarget[1]+(50-Math.random()*100),ease:Quad.easeOut,onCompleteScope:sparkle,onComplete:function(){
+                sparklewrap.removeChild(this);
+            }}
+        );
+    }
+    function sparkle(){
+        // create sparkles
+        sparkleinterval = setInterval(create_sparkle,100);
+    }
+    function stopSparkle(){
+        if(sparkleinterval){
+            clearInterval(sparkleinterval);
+        }
+    }    
+
+    var mainTl = new TimelineMax({paused: true});
+    mainTl.to('#t1g', .6, {autoAlpha: 1, ease: Power1.easeOut}, '+=.5')
+        .to('#t1g', .6, {autoAlpha: 0, ease: Power1.easeIn}, '+=.5')                 
+        .addLabel("startelements")
+        .to('#light', 1.8, {autoAlpha: 1}, 'startelements')
+        .to('#galaxy', 1.8, {autoAlpha: 1}, 'startelements')        
+        .call(sparkle,null,null,"startelements")
+
+         .to('#gold', 1.6, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .5, scaleY: .5}, {x:76, y:-130, scaleX: .75, scaleY: .75}, {x:184, y:-65, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=2')        
+        .to('#box4', 1.6, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .5, scaleY: .5}, {x:80, y:-100, scaleX: .75, scaleY: .75}, {x:193, y:-101, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.4')
+        .to('#pig', 1.6, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .5, scaleY: .5}, {x:70, y:-140, scaleX: .75, scaleY: .75}, {x:132, y:-133, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.4')
+        .to('#box3', 1.6, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .3, scaleY: .3}, {x:50, y:-90, scaleX: .75, scaleY: .75}, {x:138, y:-77, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.2')
+        .to('#headphone', 1.5, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .5, scaleY: .5}, {x:40, y:-110, scaleX: .75, scaleY: .75}, {x:92, y:-79, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.4')
+        .to('#watch', 1.5, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .5, scaleY: .5}, {x:55, y:-120, scaleX: .75, scaleY: .75}, {x:66, y:-113, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.3')        
+        .to('#box2', 1.2, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .3, scaleY: .3}, {x:34, y:-54, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.2')        
+        .to('#box1', 1, {bezier:{type:"soft", values:[{x:0, y:0, scaleX: .3, scaleY: .3}, {x:16, y:-38, scaleX: 1, scaleY: 1}]}, ease: Power2.easeInOut}, '-=1.2')
+
+        .call(stopSparkle,null,null,"-=0.2")
+        .to('#heart-container', 1, {y: '-=50px', x:'-=72px', ease: Power1.easeInOut})
+        .to('#t1', .6, {autoAlpha: 0, ease: Power2.easeOut})
+        .to('#t2', .6, {autoAlpha: 1, ease: Power2.easeIn}, '-=.6')
+        .to('#legal', .6, {autoAlpha: 1, ease: Power1.easeIn}, '-=.6')
+        .to('#t2g', .6, {autoAlpha: 1, ease:Power1.easeOut}, '+=.5')                        
+        .to('#t2g', .6, {autoAlpha: 0, ease: Power1.easeIn}, '+=.5')        
+
+        .to('#t2', .6, {autoAlpha: 0, ease: Power2.easeOut}, '+=1')
+        .to('#legal', .6, {autoAlpha: 0, ease: Power2.easeOut}, '-=.6')        
+        .to('#t1', .6, {autoAlpha: 1, ease: Power2.easeIn}, '-=.6')                            
+        ;     
+    
+    function playWing(){                
+        TweenMax.to('#leftwing',0.22,{repeat:-1,backgroundPosition:"-57px",ease:SteppedEase.config(3)});
+        TweenMax.to('#rightwing',0.22,{repeat:-1,backgroundPosition:"-51px",ease:SteppedEase.config(3)});        
+    }    
+
+    var phase = true;
+    function playHeart(){
+        TweenMax.to('#heart-fly',1.2,{
+            rotation:15-Math.random()*30,
+            x:5-Math.random()*10,
+            y:(phase ? 5+Math.random()*5 : 0),
+            transformStyle: 'preserve-3d',
+            ease:Quad.easeInOut,
+            onComplete:playHeart
+        });
+        phase = !phase;
+    }
+
+    window.onload = function() {
+        TweenMax.set('#heart-fly', {scale: 0.6});
+        playHeart();
+        playWing();
+        mainTl.play();
+        setTimeout(function(){
+            TweenMax.killAll();
+        },30000);
+    }  
+      
+</script>
+</body>
+</html>

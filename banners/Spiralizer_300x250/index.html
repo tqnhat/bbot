@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>300x250</title>    
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>    
+    <script src="drawsvgplugin.min.js"></script>              
+    <script type="text/javascript">
+        var clickTag = "https://www.google.com"; 
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        html {
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+        }
+        #content {
+            background: #ffffff;
+            width: 300px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;            
+        }
+
+        #bg-exit {
+            display: block;            
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            z-index:1000;
+        }
+
+         #logo {
+            position: absolute;
+            bottom: 20px;
+            left: 75px;   
+            opacity: 0;         
+        } 
+
+        #bg {
+            position: absolute;
+            left: 0;
+            bottom: 0;            
+        }  
+
+        #bgover {
+            position: absolute;
+            right: 0;
+            bottom: 0;            
+            opacity: 0;
+        }        
+
+        #text1 {
+            top: 30px;
+            left: 52px;
+            position: absolute;            
+            opacity: 0;
+        }
+
+        #pot {
+            top: 91px;
+            left: -40px;
+            position: absolute;                        
+        }
+        
+        #text2 {
+            top: 30px;
+            left: 67px;
+            position: absolute;    
+            opacity: 0;        
+        }
+        
+        #text3 {
+            top: 30px;
+            left: 30px;
+            position: absolute; 
+            opacity: 0;           
+        }
+        
+        #text41 {
+            top: 41px;
+            left: 23px;
+            position: absolute;  
+            opacity: 0;          
+        } 
+
+        #text421 {
+            top: 73px;
+            left: 25px;
+            position: absolute;
+            opacity: 0;            
+        } 
+
+        #text422 {
+            top: 73px;
+            left: 140px;
+            position: absolute;
+            opacity: 0;            
+        }
+
+        #text42 {
+            top: 73px;
+            left: 25px;
+            position: absolute;
+            opacity: 0;            
+        } 
+
+        #text43 {
+            top: 53px;
+            left: 25px;
+            position: absolute;
+            opacity: 0;            
+        }             
+
+        #cta{
+            position: absolute;
+            top: 115px;
+            left: 75px; 
+            z-index: 2;
+            opacity: 0;
+        }  
+
+        #svg{
+            position: absolute;
+            z-index: 1;            
+        }  
+        
+        .st0{fill:none;stroke:#8daf3e;stroke-width:4.2;stroke-linecap:round;stroke-miterlimit:10}
+        .st1{fill:none;stroke:#8daf3e;stroke-width:4.2;stroke-miterlimit:10}               
+    </style>
+</head>
+
+<body>
+<section id="content">
+    <a id="bg-exit" href="javascript:window.open(window.clickTag)"></a> 
+    <img id="bg" src="bg.jpg" width="300">
+    <img id="bgover" src="bg_over.png" width="298">     
+    <img id="pot" src="pot.png" width="332">      
+    <img id="logo" src="logo.png" alt="logo" width="151">    
+    <img id="text1" src="t1.png" width="196">
+    <img id="text2" src="t2.png" width="166">          
+    <img id="text3" src="t3.png" width="240">          
+    <img id="text41" src="t41.png" width="155">                                         
+    <img id="text421" src="t421.png" width="197">
+    <img id="text422" src="t422.png" width="135">                                                                    
+    <img id="text42" src="t42.png" width="250">                                                                    
+    <img id="text43" src="t43.png" width="275">                                                                    
+    <img id="cta" src="cta.png" width="151">     
+    
+    <svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="300px" height="250px" viewBox="0 0 300 250" style="enable-background:new 0 0 300 250;" xml:space="preserve">
+        <path id="a" class="st0" d="M155.7,180.3c1.8-8.4,9.7,0.5,11-7.5c1.3-8.1-20.8-4.4-7.4,15.1c9.9,14.3,26.3,10.8,34.3,3.2
+            c6.2-6,16-31.4-18.3-44c-36.1-13.2-20.7-30.9-12-31.3c10.3-0.4,17.4,14.2,4.4,25.2c-25.7,21.9-43.9,3.4-51.1-7.8
+            c-6-9.3-10.9-21.6-18.1-36.4c-6.3-13-11.4-24.3-11.4-24.3L76.5,95.9"/>        
+        <path id="n" class="st1" d="M256.1,118.5c1.4-6-5.9-13,0.2-14c5.4-0.8,7,15.3-12.5,22.7c-24.7,9.4-20.9,32.8-9.1,33
+            c14.4,0.2,15.3-21.5-1.6-38.4s-31.1-12.5-37.6-8.2c-8.2,5.4-11.3,24.2,4.7,29.4c18.9,6.2,25.2-16.1,18-31.6
+            c-2.1-4.5-7-11.5-16.9-21.1l-18.4-17.8v25.6"/>
+        <path id="g" class="st1" d="M242.5,49.2c-3.7,4.1-0.9,11.4-1.4,13.3c-0.9,3.5-3.5,2.9-4.7,2c-4.6-3.9,4.2-13,5.7-14.8
+            c1.7-2,10.2-5.5,18.3-1c6.7,4.9,7,10.1,5.6,17.3c-3.3,9.3-7,9.3-13,10.3c-11.7,1.1-14-4.5-20.8-6.4C221.9,67,214,73.1,214,83.1
+            c0,10.3,8.8,13.1,13.5,13.1c3.8,0,11.7-2.1,11.5-11.8l-10,0.1"/>
+        <line id="a_g" class="st1" x1="80.2" y1="88.2" x2="94.5" y2="88.2"/>
+        <line id="n_g" class="st0" x1="205.1" y1="69.2" x2="205.1" y2="85.6"/>
+    </svg>       
+</section><!-- /#content -->
+
+<script>   
+    var strEasing = "Power1.easeIn";
+    var tl = new TimelineMax({});
+    tl.pause();
+    var tl2 = new TimelineMax({});
+    tl2.pause();
+
+    tl.set('#bgover', {opacity:0})
+        .set('#text1, #text2, #text3, #text41, #text421, #text422, #text42, #text43', {opacity:0})                                             
+        .set('#logo', {opacity:0})                
+        .set('#cta', {scale: 0})                                     
+        
+        .set("#a", {scale: .86, x: 66.5, y: 5})
+        .set("#a_g", {scale: .86, x: 65.5, y: 2.5})
+        .set("#n", {scale: .86, x: 44.5, y: 5})
+        .set("#n_g", {scale: .86, x: 40.5, y: 6})
+        .set("#g", {scale: .86, x: 38, y: 10})
+        .to('#text1',  0.5, {opacity: 1, ease: strEasing}, "+=.1")
+        .to('#pot', .4, {scale:0.26, top: -86, left: -15, ease: Power2.easeOut}, '+=2')
+        .to('#text1', .4, {opacity:0}, "-=.8")
+        .to('#text2', .8, {opacity: 1}, "-=.2")                           
+        .to('#text2', .4, {opacity:0}, '+=2')
+        .to('#text3', .8, {opacity: 1}, "-=.2")
+        .to('#logo', .8, {opacity:1}, "-=.8")     
+        .to('#pot', .6, {scale:0, top: -92, left: -20, ease: Elastic.easeIn.config(1.5, 0.3), y: 0}, "+=2")           
+        .to('#text3', .4, {opacity:0}, '-=.4')           
+        .to('#text41', .8, {opacity:1})   
+        .to('#text421', .8, {opacity: 1}, "-=.8")                                                                       
+        .to('#text422', .8, {opacity: 1}, "-=.8")                                                                       
+        .to('#bgover', .5, {opacity:1}, "-=.1")                            
+                
+        .fromTo("#a_g", .6, {drawSVG:"0%"}, {drawSVG:"100%"}, "-=.3")        
+        .fromTo("#a", 3, {drawSVG:"100% 100%"}, {drawSVG:"0% 100%"}, "-=.5")            
+        .fromTo("#n", 3, {drawSVG:"100% 100%"}, {drawSVG:"0% 100%"}, "-=3")    
+        .fromTo("#n_g", .6, {drawSVG:"0%"}, {drawSVG:"100%"}, "-=3")     
+        .fromTo("#g", 3, {drawSVG:"100% 100%"}, {drawSVG:"0% 100%"}, "-=3")
+        .to('#text422', .2, {opacity: 0}, "-=2.8")     
+        .to('#cta', .5, {opacity:1, scale: 1, ease: Elastic.easeOut.config(0.6, 0.3), y: 0}, "-=.5")    
+
+    tl2.set('#bgover', {opacity:0})
+        .set('#text1, #text2, #text3, #text41, #text421, #text422, #text42, #text43, #svg', {opacity:0})                                             
+        .set('#logo', {opacity:0})                
+        .set('#cta', {scale: 0})                                     
+        
+        .set("#a", {scale: .86, x: 66.5, y: 5})
+        .set("#a_g", {scale: .86, x: 65.5, y: 2.5})
+        .set("#n", {scale: .86, x: 44.5, y: 5})
+        .set("#n_g", {scale: .86, x: 40.5, y: 6})
+        .set("#g", {scale: .86, x: 38, y: 10})
+        .to('#text1',  1, {opacity: 1, ease: strEasing}, "+=.1")      
+        .to('#pot', .4, {scale:0.26, top: -86, left: -15, ease: Power2.easeOut}, '+=1.5')        
+        .to('#text1', .4, {opacity:0}, "-=.8")
+        .to('#text2', .8, {opacity: 1}, "-=.2")                           
+        .to('#text2', .4, {opacity:0}, '+=2')
+        .to('#text3', .8, {opacity: 1}, "-=.2")
+        .to('#logo', .8, {opacity:1}, "-=.8")     
+        .to('#pot', .6, {scale:0, top: -92, left: -20, ease: Elastic.easeIn.config(1.5, 0.3), y: 0}, "+=2")           
+        .to('#text3', .4, {opacity:0}, '-=.4')           
+        .to('#text41', .8, {opacity:1})   
+        .to('#text42', .8, {opacity: 1}, "-=.8")                                                                               
+        .to('#bgover', .5, {opacity:1}, "-=.1")   
+
+        .to('#text42', .5, {opacity: 0}, "+=.3")     
+        .to('#text43', 1, {opacity: 1}, "-=.5")     
+        .to('#cta', .5, {opacity:1, scale: 1, ease: Elastic.easeOut.config(0.6, 0.3), y: 0}, "-=.5")         
+    window.onload = function() {
+        if (Enabler.isInitialized()) {
+            enablerInitHandler();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+        }
+        if(isIE()){
+            tl2.play();
+        }else{
+            tl.play();
+        }
+    }  
+
+    function enablerInitHandler(){
+        // Start polite loading, or start animation,
+        // load in your image assets, call Enabler methods,
+        // and/or include other Studio modules.
+        if (Enabler.isPageLoaded()) {
+            politeInit();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+        }
+    }
+
+    // Runs when the page is completely loaded.     
+    function politeInit(){      
+
+    }
+
+    function isIE() 
+    {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");        
+        var new_ie = ua.indexOf('Trident/');
+        var iewin10 = ua.indexOf('Edge/');
+
+        if (msie > -1 || new_ie > -1 || iewin10 > -1) // If Internet Explorer, return version number
+        {
+            return true
+        }
+        else  // If another browser, return 0
+        {
+            return false;
+        }        
+    }     
+</script>
+</body>
+</html>
