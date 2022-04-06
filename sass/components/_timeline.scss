@@ -1,0 +1,31 @@
+#timeline{
+    background-color: goldenrod;
+    .timeline-item{
+        position: relative;
+        padding-left: 3rem;
+        border-left: 1p solid #000;
+        .tl-icon{
+            position: absolute;
+            left: -27px;
+            top: 0;
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 1.3rem;
+            }
+        }
+        .tl-duration{
+            padding: .2rem .6rem;
+            background-color: aliceblue;
+            border-radius: 15px;
+            display: inline-block;
+            font-size: .8rem;
+            text-transform: uppercase;
+        }
+    }
+}
