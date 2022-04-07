@@ -46,13 +46,26 @@ p {
 }
 
 .horizontal-heading {
+  margin-bottom: 1.5rem;
+  display: block;
+  width: 100%;
+}
+.horizontal-heading h5 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: #f4c613;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  word-spacing: 9px;
+}
+.horizontal-heading h2 {
+  font-size: 3rem;
+  font-weight: 100;
 }
 
 .vertical-heading h5 {
   color: #f4c613;
-  font-size: 18px;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 500;
   word-spacing: 9px;
@@ -306,19 +319,17 @@ p {
   left: 32%;
 }
 
-#timeline {
-  background-color: goldenrod;
-}
-#timeline .timeline-item {
+.timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1p solid #000;
+  border-left: 1px solid #212226;
+  margin-bottom: 3rem;
 }
-#timeline .timeline-item .tl-icon {
+.timeline-item .tl-icon {
   position: absolute;
   left: -27px;
   top: 0;
-  background-color: aqua;
+  background-color: #f4c613;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -326,16 +337,39 @@ p {
   align-items: center;
   justify-content: center;
 }
-#timeline .timeline-item .tl-icon i {
-  font-size: 1.3rem;
+.timeline-item .tl-icon i {
+  font-size: 1.6rem;
 }
-#timeline .timeline-item .tl-duration {
-  padding: 0.2rem 0.6rem;
-  background-color: aliceblue;
+.timeline-item .tl-duration {
+  padding: 0.2rem 0.8rem;
+  margin-top: 1rem;
+  background-color: #e4e4e4;
   border-radius: 15px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
+  font-weight: 500;
+}
+.timeline-item h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.timeline-item h5 span {
+  color: #212226;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.timeline-item p, .timeline-item ul li {
+  color: #212226;
+  font-size: 1.6rem;
+}
+.timeline-item ul {
+  padding-left: 1rem;
+}
+.timeline-item ul li {
+  text-decoration: none;
 }
 
 #testimonials {

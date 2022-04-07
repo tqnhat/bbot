@@ -1,31 +1,53 @@
-#timeline{
-    background-color: goldenrod;
-    .timeline-item{
-        position: relative;
-        padding-left: 3rem;
-        border-left: 1p solid #000;
-        .tl-icon{
-            position: absolute;
-            left: -27px;
-            top: 0;
-            background-color: aqua;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            i{
-                font-size: 1.3rem;
-            }
-        }
-        .tl-duration{
-            padding: .2rem .6rem;
-            background-color: aliceblue;
-            border-radius: 15px;
-            display: inline-block;
-            font-size: .8rem;
-            text-transform: uppercase;
+
+.timeline-item{
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid $color_grey;
+    margin-bottom: 3rem;
+    .tl-icon{
+        position: absolute;
+        left: -27px;
+        top: 0;
+        background-color: $color_moon_yellow;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 1.6rem;
         }
     }
+    .tl-duration{
+        padding: 0.2rem 0.8rem;
+        margin-top: 1rem;
+        background-color: $color_white_smoke_2;
+        border-radius: 15px;
+        display: inline-block;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    h5{
+        padding: 1rem 0;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 600;
+        span{
+            color: $color_grey;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+    p, ul li{
+        color: $color_grey;
+        font-size: 1.6rem;
+    }
+    ul {
+        padding-left: 1rem;
+        li{
+            text-decoration: none;
+        }
+    } 
 }
