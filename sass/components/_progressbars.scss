@@ -15,11 +15,14 @@
     .progress-bar {
         background-color: $color-moon-yellow;
         position: relative;
+        overflow: visible;
 
         span {
+            display: inline-block;
+            height: 2rem;
             font-size: 1.2rem;
             font-family: "Open Sans", sans-serif;
-            padding: 3px;
+            padding: 9px 3px;
             background: $color_grey;
             position: absolute;
             top: -3.6rem;

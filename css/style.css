@@ -299,11 +299,14 @@ p {
 .skill .progress-bar {
   background-color: #f4c613;
   position: relative;
+  overflow: visible;
 }
 .skill .progress-bar span {
+  display: inline-block;
+  height: 2rem;
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
-  padding: 3px;
+  padding: 9px 3px;
   background: #212226;
   position: absolute;
   top: -3.6rem;
